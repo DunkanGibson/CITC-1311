@@ -17,5 +17,9 @@ public class RectangleTest {
         System.out.println(r1.diagonalLength());
         System.out.println(r2.diagonalLength());
         System.out.println(r3.diagonalLength());
+
+        System.out.println(r3.length);
+        System.out.println(r2.length);
+        System.out.println(r1.length);
     }
 }
