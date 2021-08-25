@@ -3,46 +3,43 @@
  */
 public class Employee {
 
-    int id;
+    private int id;
     static int numOfEmployees = 0;
-    int age;
-    int serviceTime;
-    boolean active;
+    private int age  = 35;
+    private int serviceTime;
+    private boolean active;
 
     Employee () {
-        id = 0;
-        age = 35;
-        active = false;
         numOfEmployees++;
     }
 
-    Employee (int newId, int newAge, int newServiceTime, Boolean newActive) {
-        id = newId;
-        age = newAge;
-        serviceTime = newServiceTime;
-        active = newActive;
+    public Employee (int newId, int newAge, int newServiceTime, Boolean newActive) {
+        this.id = newId;
+        this.age = newAge;
+        this.serviceTime = newServiceTime;
+        this.active = newActive;
         numOfEmployees++;
     }
 
-    static int getNumberOfEmployees() {
+    public static int getNumberOfEmployees() {
         return numOfEmployees;
     }
 
-    int getYearsBeforeRetire(){
-
+    public int getYearsBeforeRetire(){
         return (67 - age);
     }
 
-    boolean getActiveStatus() {
-        if(active){
-            return true;
-        }else{
-            return false;
-        }
+    public String getActiveStatus() {
+      return active ? "Active" : "Not active";
+        
     }
 
-    int yearsTillPartner(){
+    public int yearsTillPartner(){
         return 25 - serviceTime;
+    }
+
+    public int getIdNumber() {
+        return id;
     }
 
 }
