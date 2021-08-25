@@ -1,3 +1,4 @@
+package Testing;
 public class Rectangle {
     
     //State of the object, which is the data that makes up the object. In this case is a measuerment of length and width. 

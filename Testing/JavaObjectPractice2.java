@@ -1,3 +1,4 @@
+package Testing;
 public class JavaObjectPractice2 {
     public static void main(String[] args) {
         Triange test = new Triange(2, 4, 7);
