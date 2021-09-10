@@ -66,6 +66,7 @@ public class Loan {
      System.out.println(l1.getMonthlyPayment()); 
      System.out.println(l1.getNumberOfYears()); 
      System.out.println(l1.getTotalPayment()); 
+     System.out.println(l1.getLoanDate()); 
   }
 }
 
