@@ -48,4 +48,24 @@ public class Loan {
   public void setLoanAmount(double newLoanAmount){
     this.loanAmount = newLoanAmount;
   }
+
+  public double getMonthlyPayment(){
+    double monthlyInterestRate = annualInterestRate / 1200;
+    double monthlyPayment = loanAmount * monthlyInterestRate / ((Math.pow(1 /(1 + monthlyInterestRate), numberOfYears * 12)));
+    return monthlyPayment;
+  }
+
+  public double getTotalPayment(){
+    double totalPayment = getMonthlyPayment() * numberOfYears * 12;
+    return totalPayment;
+  }
+
+  public static void main(String[] args) {
+    Loan l1 = new Loan(3.0, 30, 235000);
+
+     System.out.println(l1.getMonthlyPayment()); 
+     System.out.println(l1.getNumberOfYears()); 
+     System.out.println(l1.getTotalPayment()); 
+  }
 }
+
