@@ -63,10 +63,14 @@ public class Circle2D {
         }
     }
 
+   // A method overlaps(Circle2D circle) that returns true if the specified circle overlaps with this circle 
+   public boolean overlaps(Circle2D testCircle2D){
+    if((Math.sqrt((testCircle2D.getX() - this.x) * (testCircle2D.getX() - this.x) + (testCircle2D.getY() - this.y) * (testCircle2D.getY() - this.y))) < this.radius + testCircle2D.getRadius() ){
+        return true;
+    }else{
+        return false;
+    }
+   }
+
 }
 
-
-// 1- Define the Circle2D class that contains:
-
-
-// A method overlaps(Circle2D circle) that returns true if the specified circle overlaps with this circle. See Figure (c) below.(12.5 points)
