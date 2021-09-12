@@ -18,7 +18,7 @@ public class StackOfIntegers {
 
     public boolean empty() {
         if(){
-            return false
+            return false;
         }
     }
 
