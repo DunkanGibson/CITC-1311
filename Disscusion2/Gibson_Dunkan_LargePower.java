@@ -9,11 +9,9 @@ public class Gibson_Dunkan_LargePower {
 
         BigInteger result = BigInteger.ONE;
         for (int i = 1; i <= y; i++)
-        result = result.multiply(new BigInteger(x +""));
+            result = result.multiply(new BigInteger(x +""));
         return result;
 
-        // BigInteger z = BigInteger.valueOf(x);
-        // return z.pow(y);
-    }
+    } 
 }
 
