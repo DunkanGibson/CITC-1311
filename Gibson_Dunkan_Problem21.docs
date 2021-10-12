@@ -1,0 +1,5 @@
+1. If no exception occurs both statement 4 and 5 will be executed. Statement 5 will be because the program throws no exception thus it will follow the normal top down execution of statements. Statement 4 will execute because it is in the Finally clause and this clause will always execute no matter the place or if an exception is thrown.
+
+2. If the exception is of type Exception1 both statement 4 and 5 will be executed. Statement 4 will execute because it is in the Finally clause and this clause will always execute no matter the place or if an exception is thrown. Statement 5 will execute because even though there is an exception it is handled and the flow of the program can continue normally after the catch.
+
+3. If the exception is not of type Exception1 statement 4 will be executed. Statment 4 will execute because it is in the Finally clause and this clause will always execute no matter the place or if an exception is thrown. However, Statement 5 will not be executed as the flow of the program is stopped after the Finally clause as the exception is not handled.
